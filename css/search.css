@@ -1,0 +1,27 @@
+.search-container {
+  margin-bottom: 2em;
+}
+
+#search {
+  padding: 1em 2em;
+  font-size: 1.2rem;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: 0;
+}
+
+#search:focus {
+  border-color: rgb(0, 89, 255);
+  width: 500px;
+}
+
+#search::placeholder {
+  color: #ccc;
+}
+
+.text-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
