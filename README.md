@@ -1,4 +1,4 @@
-# InGame Task
+# InManage Task
 <hr />
 
 ## Search Field
@@ -19,7 +19,7 @@
 
 ### Demo: <a href="https://danielpaz.me/inManage/shape-creator.html">Click here!</a>
 
-1. A vanilla js CR*D shape system - Create, Read and delete shapes.
+1. A vanilla js CR*D shape system - Create, Read and Delete shapes.
 2. I wasn't sure wether the shapes position should have been random as well, so I made that option anyway.
 3. I took advantaged of advances subjects in both CSS and JS, for example clamp function, and the event loop system.
 4. The `focusout` event can be buggy, I had no time to fix it and I didn't want to cross the schedule.
