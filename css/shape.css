@@ -1,0 +1,82 @@
+.plus-button {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  outline: 0;
+  user-select: none;
+}
+
+.plus-button:hover {
+  border-color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.plus-button:active {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.shape {
+  position: absolute;
+  pointer-events: none; /* So squared shapes won't be messed up */
+  transition: all 1s;
+  top: 0;
+  left: 0;
+}
+
+.rotate {
+  animation: spin 4s linear infinite;
+}
+
+.shape svg {
+  pointer-events: none;
+  overflow: visible;
+}
+
+.shape svg * {
+  opacity: 0.8;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.shape svg *:hover {
+  opacity: 1;
+}
+
+.shape.target {
+  z-index: 2;
+}
+
+.shape.target svg {
+  stroke-width: 3px;
+  stroke: #f20;
+  paint-order: stroke;
+}
+
+.shape.target svg * {
+  opacity: 1;
+}
+
+#shapePanel {
+  position: absolute;
+  display: none;
+  /*visibility: hidden;*/
+  padding: 10px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  z-index: 3;
+  margin-left: -100px;
+  margin-top: -30px;
+  width: 70px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

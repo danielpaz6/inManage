@@ -4,9 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My InManage App - Shape Creator</title>
-  <link href="style.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/shape.css" rel="stylesheet" />
 </head>
 <body>
+  <header>
+    <div class="header-container">
+      <h1>Shape Creator 🌟</h1>
+    </div>
+    <div class="left-panel">
+      <button class="plus-button" title="Add new shape" id="addBtn">+</button>
+    </div>
+  </header>
+  <main>
+    <p class="main-container" id="initMsg">
+      Make some awesome shapes using this page!
+    </p>
+    <div id="shapeList"></div>
+    <div id="shapePanel" tabindex="-1">
+      Options:<br />
+      <button id="rotateShape">Rotate</button><br />
+      <button id="removeShape">Remove</button>
+    </div>
+  </main>
   <script src="js/shape.js"></script>
 </body>
 </html>
